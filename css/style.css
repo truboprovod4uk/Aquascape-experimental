@@ -1,0 +1,140 @@
+body{
+  background-color: #515459;
+  margin: 0px;
+  color:snow;
+}
+
+/** HEADER **/
+header{
+  height: 80px;
+  width:100%;
+  background-color: #3f8c45;
+}
+
+
+.brand a{
+  text-decoration: none;
+  float: left;
+  height: 60px;
+  width: 250px;
+  color: snow;
+  padding-top: 20px;
+  font-size: 25px;
+}
+
+.nav a{
+  text-decoration: none;
+  float: right;
+  height: 60px;
+  width: 100px;
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+  font-size: 25px;
+}
+
+.nav a:hover{
+  background-color: #515459;
+  
+}
+/* END HEADER */
+
+
+
+/* FOOTER */
+footer{
+  position: fixed;
+  bottom:0px;
+  height:55px;
+  width:100%;
+  background-color: #35373a;
+  text-align: center;
+  color:white;
+  padding-top: 5px;
+
+}
+/* END FOOTER */
+
+
+/*MAIN CONTETNT*/
+.container{
+  margin:auto;
+  width: 95%;
+  padding-bottom: 55px;
+}
+
+.main-desc{
+text-align: justify;
+font-size: 16px;
+padding-right: 5px;
+}
+
+.main-foto{
+padding-left: 7px;
+float:right;
+width:75%;
+box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+
+/*END MAIN CONTENT*/
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/********** Extra small devices only **********/
+@media (min-width: 576) and (max-width: 767px) {
+.main-foto{
+  width:100%;
+}
+
+.brand a{
+  height: 40px;
+  width: 0%;
+  padding-top: 25px;
+  font-size: 10px;
+}
+}
+
+@media (max-width: 576px) {
+
+header{
+  height: 60px;
+  width:100%;
+  background-color: #3f8c45;
+}
+
+.main-foto{
+  width:100%;
+}
+
+.brand a{
+  height: 0px;
+  width: 0px;
+  color: snow;
+  padding-top: 20px;
+  font-size: 0px;
+}
+
+.nav a{
+  text-decoration: none;
+  float: right;
+  height: 40px;
+  width: 33%;
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+  font-size: 20px;
+}
+}
