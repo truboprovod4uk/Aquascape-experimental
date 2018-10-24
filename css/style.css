@@ -13,23 +13,25 @@ header{
 
 
 .brand a{
+  box-sizing: border-box;
   text-decoration: none;
   float: left;
-  height: 60px;
+  height: 55px;
   width: 250px;
   color: snow;
-  padding-top: 10px;
+  padding-top: 13px;
   font-size: 25px;
 }
 
 .nav a{
+  box-sizing: border-box;
   text-decoration: none;
   float: right;
-  height: 60px;
+  height: 55px;
   width: 100px;
   text-align: center;
   color: white;
-  padding-top: 10px;
+  padding-top: 13px;
   font-size: 25px;
 }
 
@@ -59,7 +61,7 @@ footer{
 /*MAIN CONTETNT*/
 .container{
   margin:auto;
-  width: 95%;
+  width: 96%;
   padding-bottom: 55px;
 }
 
