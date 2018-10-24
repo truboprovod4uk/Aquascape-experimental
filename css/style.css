@@ -6,7 +6,7 @@ body{
 
 /** HEADER **/
 header{
-  height: 80px;
+  height: 55px;
   width:100%;
   background-color: #3f8c45;
 }
@@ -18,7 +18,7 @@ header{
   height: 60px;
   width: 250px;
   color: snow;
-  padding-top: 20px;
+  padding-top: 10px;
   font-size: 25px;
 }
 
@@ -29,7 +29,7 @@ header{
   width: 100px;
   text-align: center;
   color: white;
-  padding-top: 20px;
+  padding-top: 10px;
   font-size: 25px;
 }
 
@@ -107,7 +107,7 @@ box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
 }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575px) {
 
 header{
   height: 60px;
