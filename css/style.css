@@ -9,6 +9,7 @@ header{
   height: 55px;
   width:100%;
   background-color: #3f8c45;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
 }
 
 
@@ -59,24 +60,59 @@ footer{
 
 
 /*MAIN CONTETNT*/
+
 .container{
   margin:auto;
   width: 96%;
-  padding-bottom: 55px;
 }
 
 .main-desc{
+display: block;
 text-align: justify;
 font-size: 16px;
-padding-right: 5px;
+
 }
 
 .main-foto{
-padding-left: 7px;
 float:right;
+margin-left: 5px;
 width:75%;
 box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
 }
+
+.plant-left, .plant-right{
+  text-align: justify;
+  box-sizing: border-box;
+  padding: 0px 8px 0px 0px;
+  margin: 15px 0px 0px 0px;
+  width: 49%;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
+}
+
+.plant-left:hover, .plant-right:hover{
+   box-shadow: 5px 5px 10px rgba(0,0,0,0.6);
+}
+
+.plant-left{
+  float:left;
+}
+
+.plant-right{
+  float:right;
+}
+
+.plant-left p, .plant-right p{
+margin-top:3px;
+}
+
+.plant-left img, .plant-right img{
+  border-radius: 10px 0px 0px 5px;
+  margin-right: 5px;
+  float:left;
+  width: 50%;
+}
+
 
 /*END MAIN CONTENT*/
 
@@ -118,6 +154,7 @@ header{
 }
 
 .main-foto{
+
   width:100%;
 }
 
@@ -132,7 +169,7 @@ header{
 .nav a{
   text-decoration: none;
   float: right;
-  height: 40px;
+  height: 60px;
   width: 33%;
   text-align: center;
   color: white;
