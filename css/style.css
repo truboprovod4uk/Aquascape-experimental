@@ -63,7 +63,12 @@ footer{
 
 .container{
   margin:auto;
-  width: 96%;
+  width: 95%;
+}
+
+.container-content{
+  margin:auto;
+  width: 990px;
 }
 
 .main-desc{
@@ -129,10 +134,19 @@ margin-top:3px;
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
 
+.container-content{
+  margin:auto;
+  width: 600px;
+}
+.plant-left, .plant-right{
+  width:100%;
+}
+
+
 }
 
 /********** Extra small devices only **********/
-@media (min-width: 576) and (max-width: 767px) {
+@media (min-width: 576px) and (max-width: 767px) {
 .main-foto{
   width:100%;
 }
@@ -142,6 +156,14 @@ margin-top:3px;
   width: 0%;
   padding-top: 25px;
   font-size: 10px;
+}
+
+.container-content{
+  margin:auto;
+  width: 550px;
+}
+.plant-left, .plant-right{
+  width:100%;
 }
 }
 
@@ -154,7 +176,6 @@ header{
 }
 
 .main-foto{
-
   width:100%;
 }
 
@@ -175,5 +196,25 @@ header{
   color: white;
   padding-top: 20px;
   font-size: 20px;
+}
+
+.container-content{
+  margin:auto;
+  width: 95%;
+}
+.plant-left, .plant-right{
+  padding: 0px 0px 0px 0px;
+  width:100%;
+}
+
+.plant-left img, .plant-right img{
+  border-radius: 10px 10px 0px 0px;
+
+  float:left;
+  width: 100%;
+}
+
+.plant-left p, .plant-right p{
+margin:8px;
 }
 }
