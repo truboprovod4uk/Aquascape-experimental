@@ -13,6 +13,7 @@ header{
 }
 
 
+
 .brand a{
   box-sizing: border-box;
   text-decoration: none;
@@ -81,7 +82,7 @@ font-size: 16px;
 .main-foto{
 float:right;
 margin-left: 5px;
-width:75%;
+width:900px;
 box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
 }
 
@@ -129,11 +130,18 @@ margin-top:3px;
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
 
+.main-foto{
+width: 100%;
+}
+
 }
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
 
+.main-foto{
+width: 100%;
+}
 .container-content{
   margin:auto;
   width: 600px;
