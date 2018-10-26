@@ -2,9 +2,7 @@
 document.addEventListener("DOMContentLoaded",
   function (event) {
     
-    // Unobtrusive event binding
-    document.querySelector("button")
-      .addEventListener("click", function () {
+
 
         // Call server to get the name
         $ajaxUtils
@@ -12,15 +10,21 @@ document.addEventListener("DOMContentLoaded",
             function (res) {
               var reult="";
                 for (var i=0; i<res.length; i++){
-              var message = "<h3>" + res[i].plantName + "</h3>" + " " + res[i].description + "<img src="+ res[i].foto + " alt='aqua foto'>" ;
-              reult+=message;
+              if (i%2==0){
+                var float="<div class='plant-left'>";
+              }else{
+                var float="<div class='plant-right'>"
               }
-              document.querySelector("#content")
+              var foto = "<img src="+ res[i].foto + " alt='aqua foto'><p>" ;
+              var message = "<h3>" + res[i].plantName + "</h3>" + " " + res[i].description+"</p></div>";
+              reult+=float+foto+message;
+              }
+              document.querySelector("#plants")
                 .innerHTML = "<p>" + reult + "</p>" ;
             });
 
 
-      });
+
   }
 );
 
