@@ -102,10 +102,12 @@ box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
 
 .plant-left{
   float:left;
+  clear:left;
 }
 
 .plant-right{
   float:right;
+  clear:right;
 }
 
 .plant-left p, .plant-right p{
