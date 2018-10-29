@@ -15,8 +15,8 @@ document.addEventListener("DOMContentLoaded",
               }else{
                 var float="<div class='plant-right'>"
               }
-              var foto = "<img src="+ res[i].foto + " alt='aqua foto'><p>" ;
-              var message = "<h3>" + res[i].plantName + "</h3>" + " " + res[i].description+"</p></div>";
+              var foto = "<img src="+ res[i].foto + " alt='aqua foto'>" ;
+              var message = "<p>" + res[i].plantName + "</p>" + "<p>" + res[i].description+"</p></div>";
               reult+=float+foto+message;
               }
               document.querySelector("#plants")
