@@ -20,7 +20,7 @@ header{
   text-decoration: none;
   float: left;
   height: 55px;
-  width: 250px;
+
   color: snow;
   padding-top: 13px;
   font-size: 25px;
@@ -170,17 +170,15 @@ width: 100%;
 @media (min-width: 576px) and (max-width: 767px) {
   #home{
   display: block;
+  width:25%;
+  float:left;
 }
 .main-foto{
   width:100%;
 }
 
-.brand a{
-  display:  none;
-  height: 40px;
-  width: 0%;
-  padding-top: 25px;
-  font-size: 10px;
+#aqua{
+  display: none;
 }
 
 .container-content{
@@ -204,19 +202,15 @@ header{
   width:100%;
 }
 
-.brand a{
-  height: 0px;
-  width: 0px;
-  color: snow;
-  padding-top: 20px;
-  font-size: 0px;
+#aqua{
+  display: none;
 }
 
 .nav a{
   text-decoration: none;
   float: right;
   height: 60px;
-  width: 33%;
+  width: 25%;
   text-align: center;
   color: white;
   padding-top: 20px;
