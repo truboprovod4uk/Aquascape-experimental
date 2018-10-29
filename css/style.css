@@ -1,3 +1,4 @@
+
 body{
   background-color: #515459;
   margin: 0px;
@@ -87,7 +88,7 @@ box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
 }
 
 .plant-left, .plant-right{
-  text-align: justify;
+  /*text-align: justify;*/
   box-sizing: border-box;
   padding: 0px 8px 0px 0px;
   margin: 15px 0px 0px 0px;
@@ -118,20 +119,26 @@ margin-top:3px;
   border-radius: 10px 0px 0px 5px;
   margin-right: 5px;
   float:left;
-  width: 50%;
+  width: 60%;
 }
 
-
+li{
+  list-style-type: none;
+}
 /*END MAIN CONTENT*/
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
-
+#home{
+  display: none;
+}
 }
 
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
-
+#home{
+  display: none;
+}
 .main-foto{
 width: 80%;
 }
@@ -140,6 +147,10 @@ width: 80%;
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
+
+#home{
+  display: none;
+}
 
 .main-foto{
 width: 100%;
@@ -157,11 +168,15 @@ width: 100%;
 
 /********** Extra small devices only **********/
 @media (min-width: 576px) and (max-width: 767px) {
+  #home{
+  display: block;
+}
 .main-foto{
   width:100%;
 }
 
 .brand a{
+  display:  none;
   height: 40px;
   width: 0%;
   padding-top: 25px;

@@ -1,51 +1,93 @@
-[{
+[
+{
   "plantName": "Blyxa japonica",
-  "description": "is an attractive grass-like plant with around 20 cm tall. It is ideal for foreground or even mid-ground in a smaller aquarium. It is also used as a background plant in nano tanks. ",
+  "pH": "5.0-7.0",
+  "temperature":"23-27C",
+  "hardness":"2-12 dGH",
+  "lighting":"1-1.5 wats/liter",
+  "CO2":"hight",
   "foto": "'images/plants/Blyxa japonica.jpg'"
 },
+
 {
-  "plantName": "Cryptocoryne wendti nana",
-  "description": "Cryptocoryne is one the most popular aquarium plants because of its undemanding nature and species variability.Cryptocoryne is one the most popular aquarium plants because of",
+  "plantName": "Cryptocoryne",
+  "pH": "4.5-8.0",
+  "temperature":"21-28C",
+  "hardness":"4-8 dGH",
+  "lighting":"0.5-1 wats/liter",
+  "CO2":"low",
   "foto": "'images/plants/Cryptocoryne.jpg'"
 },
 {
   "plantName": "Echinodorus tenellus",
-  "description": "Echinodorus tennellus is a carpeting grass that is, in many ways, similar to Eleocharis parvula (otherwise known as ‘hairgrass’), but has slightly larger, coarser leaves which have an almost feather like appearance. As a result of that difference, it has a coarser, thicker appearance in the aquarium which creates a more rugged, wild atmosphere that can be very appealing and a little bit different.",
+  "pH": "5.5-7.5",
+  "temperature":"22-26C",
+  "hardness":"0-12 dGH",
+  "lighting":"0.5-1.5 wats/liter",
+  "CO2":"medium",
   "foto": "'images/plants/Echinodorus tenellus.jpg'"
 },
 {
   "plantName": "Hemianthus micranthemoides",
-  "description": "Echinodorus tennellus is a carpeting grass that is, in many ways, similar to Eleocharis parvula (otherwise known as ‘hairgrass’), but has slightly larger, coarser leaves which have an almost feather like appearance. As a result of that difference, it has a coarser, thicker appearance in the aquarium which creates a more rugged, wild atmosphere that can be very appealing and a little bit different.",
+  "pH": "5.0-7.0",
+  "temperature":"23-27C",
+  "hardness":"5-11 dGH",
+  "lighting":"2.0-3.0 wats/liter",
+  "CO2":"hight",
   "foto": "'images/plants/Hemianthus micranthemoides.jpg'"
 },
 {
   "plantName": "Hydrocotyle tripartita",
-  "description": "Echinodorus tennellus is a carpeting grass that is, in many ways, similar to Eleocharis parvula (otherwise known as ‘hairgrass’), but has slightly larger, coarser leaves which have an almost feather like appearance. As a result of that difference, it has a coarser, thicker appearance in the aquarium which creates a more rugged, wild atmosphere that can be very appealing and a little bit different.",
+  "pH": "5.0-7.0",
+  "temperature":"23-27C",
+  "hardness":"2-12 dGH",
+  "lighting":"1-1.5 wats/liter",
+  "CO2":"hight",
   "foto": "'images/plants/Hydrocotyle tripartita.jpg'"
 },
 {
   "plantName": "Lilaeopsis brasiliensis",
-  "description": "Echinodorus tennellus is a carpeting grass that is, in many ways, similar to Eleocharis parvula (otherwise known as ‘hairgrass’), but has slightly larger, coarser leaves which have an almost feather like appearance. As a result of that difference, it has a coarser, thicker appearance in the aquarium which creates a more rugged, wild atmosphere that can be very appealing and a little bit different.",
+  "pH": "5.0-7.0",
+  "temperature":"23-27C",
+  "hardness":"5-10 dGH",
+  "lighting":"1-1.5 wats/liter",
+  "CO2":"hight",
   "foto": "'images/plants/Lilaeopsis brasiliensis.jpg'"
 },
 {
   "plantName": "Mycrosorum pteropus nerrow leaf",
-  "description": "Echinodorus tennellus is a carpeting grass that is, in many ways, similar to Eleocharis parvula (otherwise known as ‘hairgrass’), but has slightly larger, coarser leaves which have an almost feather like appearance. As a result of that difference, it has a coarser, thicker appearance in the aquarium which creates a more rugged, wild atmosphere that can be very appealing and a little bit different.",
+  "pH": "5.0-7.0",
+  "temperature":"18-26C",
+  "hardness":"0-12 dGH",
+  "lighting":"1-1.5 wats/liter",
+  "CO2":"hight",
   "foto": "'images/plants/Mycrosorum pteropus nerrow leaf.jpg'"
 },
 {
   "plantName": "Riccia fluitans",
-  "description": "Echinodorus tennellus is a carpeting grass that is, in many ways, similar to Eleocharis parvula (otherwise known as ‘hairgrass’), but has slightly larger, coarser leaves which have an almost feather like appearance. As a result of that difference, it has a coarser, thicker appearance in the aquarium which creates a more rugged, wild atmosphere that can be very appealing and a little bit different.",
+  "pH": "5.0-7.0",
+  "temperature":"22-28C",
+  "hardness":"2-12 dGH",
+  "lighting":"1-1.5 wats/liter",
+  "CO2":"hight",
   "foto": "'images/plants/Riccia fluitans.jpg'"
 },
 {
   "plantName": "Rotala rotundifolia",
-  "description": "Echinodorus tennellus is a carpeting grass that is, in many ways, similar to Eleocharis parvula (otherwise known as ‘hairgrass’), but has slightly larger, coarser leaves which have an almost feather like appearance. As a result of that difference, it has a coarser, thicker appearance in the aquarium which creates a more rugged, wild atmosphere that can be very appealing and a little bit different.",
+  "pH": "5.0-7.0",
+  "temperature":"20-26C",
+  "hardness":"7-12 dGH",
+  "lighting":"1-1.5 wats/liter",
+  "CO2":"hight",
   "foto": "'images/plants/Rotala rotundifolia.jpg'"
 },
 {
   "plantName": "Staurogyne repens",
-  "description": "Echinodorus tennellus is a carpeting grass that is, in many ways, similar to Eleocharis parvula (otherwise known as ‘hairgrass’), but has slightly larger, coarser leaves which have an almost feather like appearance. As a result of that difference, it has a coarser, thicker appearance in the aquarium which creates a more rugged, wild atmosphere that can be very appealing and a little bit different.",
+  "pH": "5.0-7.0",
+  "temperature":"18-24C",
+  "hardness":"3-9 dGH",
+  "lighting":"1-1.5 wats/liter",
+  "CO2":"hight",
   "foto": "'images/plants/Staurogyne repens.jpg'"
 }
 ]
