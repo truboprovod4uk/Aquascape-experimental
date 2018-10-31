@@ -5,6 +5,7 @@
     var htmlGalery="snippets/gallery-snippet.html";
     var htmlHome="snippets/home-snippet.html";
     var urlPlants="data/plants.json";
+    var urlFishes="data/fishes.json";
     var contcont="<div class='container-content'>";
 
 
@@ -33,8 +34,6 @@ $ajaxUtils.sendGetRequest(
   false);
 }
 
-
-
 /*--------------------------------------------------*/
 // Load the menu categories view
 var loadPlants = function () {
@@ -43,6 +42,11 @@ var loadPlants = function () {
     buildAndShowCategoriesHTML);
 };
 
+var loadFishes = function () {
+  $ajaxUtils.sendGetRequest(
+    urlFishes,/*json*/
+    buildAndShowCategoriesHTML);
+};
 
 // Builds HTML for the categories page based on the data
 // from the server
@@ -77,7 +81,7 @@ function buildCategoriesViewHtml(categories,/*json*/
       var float="plant-right";
     }
     var html = htmlPlantsLoop;
-    var name = categories[i].plantName;
+    var name = categories[i].name;
     var pH = categories[i].pH
     var temp=categories[i].temperature;
     var hardness = categories[i].hardness;
