@@ -24,6 +24,15 @@ var insertProperty = function (string, propName, propValue) {
   return string;
 }
 
+var loadHome = function(){
+$ajaxUtils.sendGetRequest(
+  htmlHome,
+  function (res) {
+    document.querySelector("#main-content").innerHTML = res;
+  },
+  false);
+}
+
 
     var loadPlants = function(){
 
@@ -80,15 +89,63 @@ var insertProperty = function (string, propName, propValue) {
 }
    
 
-var loadHome = function(){
-
-$ajaxUtils.sendGetRequest(
-  htmlHome,
-  function (res) {
-    document.querySelector("#main-content").innerHTML = res;
-
-  },
-  false);
+/*--------------------------------------------------*/
+// Load the menu categories view
+var loadPlants2 = function () {
+  $ajaxUtils.sendGetRequest(
+    urlPlants/*json*/,
+    buildAndShowCategoriesHTML);
+};
 
 
+// Builds HTML for the categories page based on the data
+// from the server
+function buildAndShowCategoriesHTML (categories/*json(обэкт що буде оброблятись)*/) {
+
+
+      // Retrieve single category snippet
+      $ajaxUtils.sendGetRequest(
+        categoryHtml,/*url до фрагменту який буде лупатись*/
+        function (htmlPlantsLoop) {/*handle фрагменту який буде лупатись*/
+
+
+          var categoriesViewHtml =
+            buildCategoriesViewHtml(categories,
+                                    htmlPlantsLoop);
+          insertHtml("#main-content", categoriesViewHtml);
+        },
+        false);
+
+}
+
+
+// Using categories data and snippets html
+// build categories view HTML to be inserted into page
+function buildCategoriesViewHtml(categories,/*json*/
+                                 htmlPlantsLoop){/*url до фрагменту який буде лупатись*/
+
+  var finalHtml = "<div class='container-content' id='plants'>";
+
+  // Loop over categories
+
+
+  for (var i = 0; i < urlPlants.length; i++) {
+    // Insert category values
+    var html = htmlPlantsLoop;
+    var name = plants[i].plantName;
+    var pH = plants[i].pH
+    var hardness = plants[i].hardness;
+    var lighting = plants[i].lighting;
+    var co2 = plants[i].co2;
+    html = insertProperty(html, "name", name);
+    html = insertProperty(html, "pH", pH);
+    html = insertProperty(html, "hardness", hardness);
+    html = insertProperty(html, "lighting", lighting);
+    html = insertProperty(html, "co2", co2);
+
+    finalHtml += html;
+  }
+
+  finalHtml += "</div>";
+  return finalHtml;
 }
