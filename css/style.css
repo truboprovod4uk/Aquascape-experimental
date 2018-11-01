@@ -16,11 +16,11 @@ header{
   box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
 }
 
-header, #aqua, .nav a{
+header, #aqua, .nav a, #prev, #next{
   height: 55px;
 }
 
-#aqua, .nav a, #btm-place a{
+#aqua, .nav a, #prev, #next{
   box-sizing: border-box;
   text-decoration: none;
   color: snow;
@@ -33,7 +33,7 @@ header, #aqua, .nav a{
   float: left;
 }
 
-.nav a, #btm-place a{
+.nav a {
   float: right;
   width: 100px;
   text-align: center;
@@ -48,25 +48,34 @@ header, #aqua, .nav a{
 
 /*Gallery*/
 
+#gallery{
+  position: relative;
+  width: 80%;
+  margin:auto;
+  background-color: white;
+}
+
 #slider{
   display: block;
-  width:90%;
+  width:100%;
   margin: auto;
   margin-top: 10px;
   clear: right;
 }
 
-#btm-place{
-  width:200px;
-  margin-top: 5px;
-  margin: auto;
-  background-color: black;
+#prev, #next{
+  position:absolute;
+  display: block;
+  top:40%;
 }
 
+#prev{
+  left:15px;
+}
 
-#btm-place a:hover{
-  background-color: #515459;
-  }
+#next{
+  right:15px;
+}
 /*End Gallery*/
 
 /* FOOTER */
