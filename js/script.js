@@ -79,13 +79,14 @@ $ajaxUtils.sendGetRequest(
   false);
 };
 
-var loadPlants = function () {
-  $ajaxUtils.sendGetRequest(
-    urlPlants,
-    buildAndShowPlantsHTML);
+var loadGallery = function(){
+$ajaxUtils.sendGetRequest(
+  htmlGalery,
+  function (res) {
+    document.querySelector("#main-content").innerHTML = res;
+  },
+  false);
 };
-
-
 
 /*----------------------Plants----------------------------*/
 var loadPlants = function () {

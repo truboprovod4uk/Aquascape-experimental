@@ -52,7 +52,6 @@ header, #aqua, .nav a, #prev, #next{
   position: relative;
   width: 80%;
   margin:auto;
-  background-color: white;
 }
 
 #slider{
@@ -80,7 +79,7 @@ header, #aqua, .nav a, #prev, #next{
 
 /* FOOTER */
 footer{
-  position: fixed;
+  /*position: fixed;*/
   bottom:0px;
   height:55px;
   width:100%;
