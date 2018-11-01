@@ -1,18 +1,29 @@
 
-    var htmlPlants="snippets/plants-snippet.html";
-    var htmlPlantsLoop="snippets/plants-snippet-loop.html";
-    var htmlFishes="snippets/fishes-shippet.html";
-    var htmlGalery="snippets/gallery-snippet.html";
-    var htmlHome="snippets/home-snippet.html";
-    var urlPlants="data/plants.json";
-    var urlFishes="data/fishes.json";
-    var contcont="<div class='container-content'>";
+var htmlPlantsLoop="snippets/plants-snippet.html";
+var htmlFishesLoop="snippets/fishes-snippet.html";
+var htmlGalery="snippets/gallery-snippet.html";
+var htmlHome="snippets/home-snippet.html";
+var urlPlants="data/plants.json";
+var urlFishes="data/fishes.json";
+var contcont="<div class='container-content'>";
+
+
+// On page load (before images or CSS)
+document.addEventListener("DOMContentLoaded", function (event) {
+// On first load, show home view
+$ajaxUtils.sendGetRequest(
+  htmlHome,
+  function (res) {
+    document.querySelector("#main-content").innerHTML = res;
+  },
+  false);
+});
+
 
 
 // Convenience function for inserting innerHTML for 'select'
 var insertHtml = function (selector, html) {
-  var targetElem = document.querySelector(selector);
-  targetElem.innerHTML = html;
+  var targetElem = document.querySelector(selector).innerHTML = html;
 };
 
 
@@ -20,8 +31,7 @@ var insertHtml = function (selector, html) {
 // with propValue in given 'string'
 var insertProperty = function (string, propName, propValue) {
   var propToReplace = "{{" + propName + "}}";
-  string = string
-    .replace(new RegExp(propToReplace, "g"), propValue);
+  string = string.replace(new RegExp(propToReplace, "g"), propValue);
   return string;
 }
 
@@ -32,48 +42,39 @@ $ajaxUtils.sendGetRequest(
     document.querySelector("#main-content").innerHTML = res;
   },
   false);
-}
+};
 
-/*--------------------------------------------------*/
-// Load the menu categories view
 var loadPlants = function () {
   $ajaxUtils.sendGetRequest(
-    urlPlants,/*json*/
-    buildAndShowCategoriesHTML);
+    urlPlants,
+    buildAndShowPlantsHTML);
 };
 
-var loadFishes = function () {
+
+
+/*----------------------Plants----------------------------*/
+var loadPlants = function () {
   $ajaxUtils.sendGetRequest(
-    urlFishes,/*json*/
-    buildAndShowCategoriesHTML);
+    urlPlants,
+    buildAndShowPlantsHTML);
 };
-
-// Builds HTML for the categories page based on the data
-// from the server
-function buildAndShowCategoriesHTML (categories/*json(обэкт що буде оброблятись)*/) {
+// Builds HTML for the plants page based on the data from the server
+function buildAndShowPlantsHTML (categories/*json(обэкт що буде оброблятись)*/) {
 
       // Retrieve single category snippet
       $ajaxUtils.sendGetRequest(htmlPlantsLoop,/*url до фрагменту який буде лупатись*/
         function (htmlPlantsLoop) {/*handle фрагменту який буде лупатись*/
-
-
-          var categoriesViewHtml =
-            buildCategoriesViewHtml(categories,
+          var plantsViewHtml =
+            buildPlantsViewHtml(categories,
                                     htmlPlantsLoop);
-          insertHtml("#main-content", categoriesViewHtml);
+          insertHtml("#main-content", plantsViewHtml);
         },
         false);
-
 }
 
-
-// Using categories data and snippets html
-// build categories view HTML to be inserted into page
-function buildCategoriesViewHtml(categories,/*json*/
-                                 htmlPlantsLoop){/*url до фрагменту який буде лупатись*/
-
+// Using plants data and snippets html build plants view HTML to be inserted into page
+function buildPlantsViewHtml(categories, htmlPlantsLoop){
   var finalHtml = "<div class='container-content' id='plants'>";
-
   for (var i = 0; i < categories.length; i++) {
     if (i%2==0){
       var float="plant-left";
@@ -86,7 +87,7 @@ function buildCategoriesViewHtml(categories,/*json*/
     var temp=categories[i].temperature;
     var hardness = categories[i].hardness;
     var lighting = categories[i].lighting;
-    var co2 = urlPlants[i].co2;
+    var co2 = categories[i].CO2;
     html = insertProperty(html, "float", float);
     html = insertProperty(html, "name", name);
     html = insertProperty(html, "pH", pH);
@@ -94,6 +95,61 @@ function buildCategoriesViewHtml(categories,/*json*/
     html = insertProperty(html, "hardness", hardness);
     html = insertProperty(html, "lighting", lighting);
     html = insertProperty(html, "co2", co2);
+    finalHtml += html;
+  }
+  finalHtml += "</div>";
+  return finalHtml;
+}
+
+/*----------------------End Plants------------------------*/
+
+
+
+/*----------------------Fishes----------------------------*/
+
+var loadFishes = function () {
+  $ajaxUtils.sendGetRequest(
+    urlFishes,
+    buildAndShowFishesHTML);
+};
+
+function buildAndShowFishesHTML (categories/*json(обэкт що буде оброблятись)*/) {
+
+      // Retrieve single category snippet
+      $ajaxUtils.sendGetRequest(htmlFishesLoop,/*url до фрагменту який буде лупатись*/
+        function (htmlFishesLoop) {/*handle фрагменту який буде лупатись*/
+          var fishesViewHtml =
+            buildFishesViewHtml(categories,
+                                    htmlFishesLoop);
+          insertHtml("#main-content", fishesViewHtml);
+        },
+        false);
+}
+
+// Using plants data and snippets html build plants view HTML to be inserted into page
+function buildFishesViewHtml(categories, htmlFishesLoop){
+  var finalHtml = "<div class='container-content' id='plants'>";
+  for (var i = 0; i < categories.length; i++) {
+    if (i%2==0){
+      var float="plant-left";
+    }else{
+      var float="plant-right";
+    }
+    var html = htmlFishesLoop;
+    var name = categories[i].name;
+    var temp = categories[i].temperature;
+    var lighting = categories[i].lighting;
+    var size = categories[i].size;
+    var lifespan = categories[i].lifespan;
+
+    html = insertProperty(html, "float", float);
+    html = insertProperty(html, "name", name);
+    html = insertProperty(html, "temp", temp);
+    html = insertProperty(html, "lighting", lighting);
+    html = insertProperty(html, "size", size);
+    html = insertProperty(html, "lifespan", lifespan);
+
+
     finalHtml += html;
   }
   finalHtml += "</div>";

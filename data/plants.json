@@ -5,18 +5,15 @@
   "temperature":"23-27C",
   "hardness":"2-12 dGH",
   "lighting":"1-1.5 wats/liter",
-  "CO2":"hight",
-  "foto": "'images/plants/Blyxa japonica.jpg'"
+  "CO2":"hight"
 },
-
 {
   "name": "Cryptocoryne",
   "pH": "4.5-8.0",
   "temperature":"21-28C",
   "hardness":"4-8 dGH",
   "lighting":"0.5-1 wats/liter",
-  "CO2":"low",
-  "foto": "'images/plants/Cryptocoryne.jpg'"
+  "CO2":"low"
 },
 {
   "name": "Echinodorus tenellus",
@@ -24,8 +21,7 @@
   "temperature":"22-26C",
   "hardness":"0-12 dGH",
   "lighting":"0.5-1.5 wats/liter",
-  "CO2":"medium",
-  "foto": "'images/plants/Echinodorus tenellus.jpg'"
+  "CO2":"medium"
 },
 {
   "name": "Hemianthus micranthemoides",
@@ -33,8 +29,7 @@
   "temperature":"23-27C",
   "hardness":"5-11 dGH",
   "lighting":"2.0-3.0 wats/liter",
-  "CO2":"hight",
-  "foto": "'images/plants/Hemianthus micranthemoides.jpg'"
+  "CO2":"hight"
 },
 {
   "name": "Hydrocotyle tripartita",
@@ -42,8 +37,7 @@
   "temperature":"23-27C",
   "hardness":"2-12 dGH",
   "lighting":"1-1.5 wats/liter",
-  "CO2":"hight",
-  "foto": "'images/plants/Hydrocotyle tripartita.jpg'"
+  "CO2":"hight"
 },
 {
   "name": "Lilaeopsis brasiliensis",
@@ -51,8 +45,7 @@
   "temperature":"23-27C",
   "hardness":"5-10 dGH",
   "lighting":"1-1.5 wats/liter",
-  "CO2":"hight",
-  "foto": "'images/plants/Lilaeopsis brasiliensis.jpg'"
+  "CO2":"hight"
 },
 {
   "name": "Mycrosorum pteropus nerrow leaf",
@@ -60,8 +53,7 @@
   "temperature":"18-26C",
   "hardness":"0-12 dGH",
   "lighting":"1-1.5 wats/liter",
-  "CO2":"hight",
-  "foto": "'images/plants/Mycrosorum pteropus nerrow leaf.jpg'"
+  "CO2":"hight"
 },
 {
   "name": "Riccia fluitans",
@@ -69,8 +61,7 @@
   "temperature":"22-28C",
   "hardness":"2-12 dGH",
   "lighting":"1-1.5 wats/liter",
-  "CO2":"hight",
-  "foto": "'images/plants/Riccia fluitans.jpg'"
+  "CO2":"hight"
 },
 {
   "name": "Rotala rotundifolia",
@@ -78,8 +69,7 @@
   "temperature":"20-26C",
   "hardness":"7-12 dGH",
   "lighting":"1-1.5 wats/liter",
-  "CO2":"hight",
-  "foto": "'images/plants/Rotala rotundifolia.jpg'"
+  "CO2":"hight"
 },
 {
   "name": "Staurogyne repens",
@@ -87,7 +77,6 @@
   "temperature":"18-24C",
   "hardness":"3-9 dGH",
   "lighting":"1-1.5 wats/liter",
-  "CO2":"hight",
-  "foto": "'images/plants/Staurogyne repens.jpg'"
+  "CO2":"hight"
 }
 ]

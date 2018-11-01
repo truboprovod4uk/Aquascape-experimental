@@ -1,93 +1,9 @@
 [
 {
-  "name": "Blyxa japonica",
-  "pH": "5.0-7.0",
-  "temperature":"23-27C",
-  "hardness":"2-12 dGH",
-  "lighting":"1-1.5 wats/liter",
-  "CO2":"hight",
-  "foto": "'images/plants/Blyxa japonica.jpg'"
-},
-
-{
-  "name": "Cryptocoryne",
-  "pH": "4.5-8.0",
-  "temperature":"21-28C",
-  "hardness":"4-8 dGH",
-  "lighting":"0.5-1 wats/liter",
-  "CO2":"low",
-  "foto": "'images/plants/Cryptocoryne.jpg'"
-},
-{
-  "name": "Echinodorus tenellus",
-  "pH": "5.5-7.5",
-  "temperature":"22-26C",
-  "hardness":"0-12 dGH",
-  "lighting":"0.5-1.5 wats/liter",
-  "CO2":"medium",
-  "foto": "'images/plants/Echinodorus tenellus.jpg'"
-},
-{
-  "name": "Hemianthus micranthemoides",
-  "pH": "5.0-7.0",
-  "temperature":"23-27C",
-  "hardness":"5-11 dGH",
-  "lighting":"2.0-3.0 wats/liter",
-  "CO2":"hight",
-  "foto": "'images/plants/Hemianthus micranthemoides.jpg'"
-},
-{
-  "name": "Hydrocotyle tripartita",
-  "pH": "5.0-7.0",
-  "temperature":"23-27C",
-  "hardness":"2-12 dGH",
-  "lighting":"1-1.5 wats/liter",
-  "CO2":"hight",
-  "foto": "'images/plants/Hydrocotyle tripartita.jpg'"
-},
-{
-  "name": "Lilaeopsis brasiliensis",
-  "pH": "5.0-7.0",
-  "temperature":"23-27C",
-  "hardness":"5-10 dGH",
-  "lighting":"1-1.5 wats/liter",
-  "CO2":"hight",
-  "foto": "'images/plants/Lilaeopsis brasiliensis.jpg'"
-},
-{
-  "name": "Mycrosorum pteropus nerrow leaf",
-  "pH": "5.0-7.0",
-  "temperature":"18-26C",
-  "hardness":"0-12 dGH",
-  "lighting":"1-1.5 wats/liter",
-  "CO2":"hight",
-  "foto": "'images/plants/Mycrosorum pteropus nerrow leaf.jpg'"
-},
-{
-  "name": "Riccia fluitans",
-  "pH": "5.0-7.0",
-  "temperature":"22-28C",
-  "hardness":"2-12 dGH",
-  "lighting":"1-1.5 wats/liter",
-  "CO2":"hight",
-  "foto": "'images/plants/Riccia fluitans.jpg'"
-},
-{
-  "name": "Rotala rotundifolia",
-  "pH": "5.0-7.0",
-  "temperature":"20-26C",
-  "hardness":"7-12 dGH",
-  "lighting":"1-1.5 wats/liter",
-  "CO2":"hight",
-  "foto": "'images/plants/Rotala rotundifolia.jpg'"
-},
-{
-  "name": "Staurogyne repens",
-  "pH": "5.0-7.0",
-  "temperature":"18-24C",
-  "hardness":"3-9 dGH",
-  "lighting":"1-1.5 wats/liter",
-  "CO2":"hight",
-  "foto": "'images/plants/Staurogyne repens.jpg'"
+  "name": "Angelfish",
+  "temperature":"23-26C",
+  "lighting":"10-12 hours",
+  "size":"5-7cm",
+  "lifespan": "3-5 years"
 }
 ]
