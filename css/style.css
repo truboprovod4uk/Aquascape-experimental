@@ -16,11 +16,11 @@ header{
   box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
 }
 
-header, .brand a, .nav a{
+header, #aqua, .nav a{
   height: 55px;
 }
 
-.brand a, .nav a{
+#aqua, .nav a{
   box-sizing: border-box;
   text-decoration: none;
   color: snow;
@@ -29,7 +29,7 @@ header, .brand a, .nav a{
 
 }
 
-.brand a{
+#aqua{
   float: left;
 }
 
@@ -82,7 +82,7 @@ footer{
 .main-foto{
   float:right;
   margin-left: 5px;
-  width:900px;
+  width: 900px;
   box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
 }
 
@@ -186,7 +186,6 @@ li{
 @media (max-width: 575px) {
 
 header{
-  height: 60px;
   width:100%;
   background-color: #3f8c45;
 }
@@ -200,13 +199,9 @@ header{
 }
 
 .nav a, #home{
-  text-decoration: none;
   float: right;
-  height: 60px;
   width: 25%;
-  text-align: center;
-  color: white;
-  padding-top: 20px;
+  padding-top: 17px;
   font-size: 20px;
 }
 
@@ -225,7 +220,4 @@ header{
   width: 100%;
 }
 
-.plant-left p, .plant-right p{
-  margin:8px;
-}
 }

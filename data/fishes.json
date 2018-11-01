@@ -5,5 +5,68 @@
   "lighting":"10-12 hours",
   "size":"5-7cm",
   "lifespan": "3-5 years"
+},
+{
+  "name": "Betta splendens",
+  "temperature":"23-26C",
+  "lighting":"10-12 hours",
+  "size":"5-7cm",
+  "lifespan": "3-5 years"
+},
+{
+  "name": "Black-Mollies",
+  "temperature":"23-26C",
+  "lighting":"10-12 hours",
+  "size":"5-7cm",
+  "lifespan": "3-5 years"
+},
+{
+  "name": "Corydoras-Catfish",
+  "temperature":"23-26C",
+  "lighting":"10-12 hours",
+  "size":"5-7cm",
+  "lifespan": "3-5 years"
+},
+{
+  "name": "Golden-Harlequin-Rasbora",
+  "temperature":"23-26C",
+  "lighting":"10-12 hours",
+  "size":"5-7cm",
+  "lifespan": "3-5 years"
+},
+{
+  "name": "Goldfish",
+  "temperature":"23-26C",
+  "lighting":"10-12 hours",
+  "size":"5-7cm",
+  "lifespan": "3-5 years"
+},
+{
+  "name": "Guppy",
+  "temperature":"23-26C",
+  "lighting":"10-12 hours",
+  "size":"5-7cm",
+  "lifespan": "3-5 years"
+},
+{
+  "name": "Neon-Tetra-New",
+  "temperature":"23-26C",
+  "lighting":"10-12 hours",
+  "size":"5-7cm",
+  "lifespan": "3-5 years"
+},
+{
+  "name": "otocinclus catfish",
+  "temperature":"23-26C",
+  "lighting":"10-12 hours",
+  "size":"5-7cm",
+  "lifespan": "3-5 years"
+},
+{
+  "name": "Zebra-Danio",
+  "temperature":"23-26C",
+  "lighting":"10-12 hours",
+  "size":"5-7cm",
+  "lifespan": "3-5 years"
 }
 ]
