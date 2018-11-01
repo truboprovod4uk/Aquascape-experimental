@@ -20,7 +20,7 @@ header, #aqua, .nav a{
   height: 55px;
 }
 
-#aqua, .nav a{
+#aqua, .nav a, #btm-place a{
   box-sizing: border-box;
   text-decoration: none;
   color: snow;
@@ -33,11 +33,12 @@ header, #aqua, .nav a{
   float: left;
 }
 
-.nav a{
+.nav a, #btm-place a{
   float: right;
   width: 100px;
   text-align: center;
 }
+
 
 .nav a:hover{
   background-color: #515459;
@@ -45,7 +46,28 @@ header, #aqua, .nav a{
 }
 /* END HEADER */
 
+/*Gallery*/
 
+#slider{
+  display: block;
+  width:90%;
+  margin: auto;
+  margin-top: 10px;
+  clear: right;
+}
+
+#btm-place{
+  width:200px;
+  margin-top: 5px;
+  margin: auto;
+  background-color: black;
+}
+
+
+#btm-place a:hover{
+  background-color: #515459;
+  }
+/*End Gallery*/
 
 /* FOOTER */
 footer{
